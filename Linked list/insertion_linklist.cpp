@@ -49,14 +49,14 @@ struct Node *insertatend(struct Node *head, int val)
     struct Node *ptr;
     ptr = (struct Node *)malloc(sizeof(struct Node));
     struct Node *p = head;
-    
+
     while (p->next != NULL)
     {
         p = p->next;
     }
     ptr->data = val;
     p->next = ptr;
-    ptr->next= NULL;
+    ptr->next = NULL;
     return head;
 }
 int main()
