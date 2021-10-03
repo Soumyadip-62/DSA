@@ -11,7 +11,7 @@ void display(int arr[], int n)
     cout << endl;
 }
 //deletion in an array
-void insert(int arr[], int size, int index)
+void deletion(int arr[], int size, int index)
 {
     // if (size >= capacity)
     // {
@@ -34,7 +34,7 @@ int main()
     int index;
     cout<<"Select which index you want to delete  ";
     cin>>index;
-    insert(arr, size, index);
+    deletion(arr, size, index);
     size = size -1;
     display(arr, size);
 }
