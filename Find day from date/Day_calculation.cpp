@@ -21,9 +21,10 @@ void calculateDay(int day, int month, int year)
     {
         i++;
     }
+    cout << i;
     if (year % 4 != 0)
     {
-        oddDay = (oddDay + months[i - 1] + day) % 7;
+        oddDay = (oddDay + months[i] + day) % 7;
     }
 
     //calculating the day:
